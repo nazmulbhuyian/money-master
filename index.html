@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Masterr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl	text-center text-blue-600 mt-4 mb-4">Money Master</h1>
+    </header>
+    <main>
+    <section class="w-9/12 mx-auto grid grid-cols-2">
+        <div>
+            <img src="image.png" alt="">
+        </div>
+        <div class="bg-slate-400 text-center">
+            <h3 class="text-3xl	mt-2 mb-3 text-white">Income</h3>
+
+            <label class="text-2xl text-white" for="income">INCOME:</label>
+            <input class="mt-2 mb-3 w-60 bg-gray-300" type="text" id="income" name="fav_language"><br>
+
+            <h3 class="text-3xl	mt-2 mb-3 text-white">EXPENCESS</h3>
+            <label class="text-2xl text-white" for="food">Food:</label>
+            <input class="mt-2 mb-3 w-60 bg-gray-300" type="text" id="food" name="fav_language"><br>
+
+            <label class="text-2xl text-white" for="rent">Rent:</label>
+            <input class="mt-2 mb-3 w-60 bg-gray-300" type="text" id="rent" name="fav_language"><br>
+
+            <label class="text-2xl text-white" for="clothes">Clothes:</label>
+            <input class="mt-2 mb-3 w-60 bg-gray-300" type="text" id="clothes" name="fav_language"><br>
+
+            <button id="calculate" class="bg-yellow-400 text-white px-6 py-2">Calculate</button><br>
+
+            <h1 class="text-2xl text-white">Total Expencses: <span id="total-expences">0000</span></h1>
+            <h1 class="text-2xl text-white">Total Balance: <span id="total-balance">0000</span></h1>
+
+            <label class="text-2xl text-white" for="save">Save:</label>
+            <input class="mt-2 mb-3 w-20 bg-gray-300" type="text" id="save-input" name="fav_language">
+            %
+            <button id="save" class="bg-red-400 text-white px-6 py-2">save</button><br>
+
+            <label class="text-2xl text-white" for="saving">Saving Amount:</label>
+            <input class="mt-2 mb-3 w-20 bg-gray-300" type="text" id="saving" name="fav_language"><br>
+
+            <label class="text-2xl text-white" for="remaining">Remaining Balance:</label>
+            <input class="mt-2 mb-3 w-20 bg-gray-300" type="text" id="remaining" name="fav_language">
+        </div>
+    </section>
+
+    </main>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
